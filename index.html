@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <title>Esercizio dischi spotify</title>
+  </head>
+  <body>
+
+    <div id="app">
+
+      <div id="top">
+
+        <img src="https://cdn.iconscout.com/icon/free/png-256/spotify-11-432546.png" alt="spotify logo">
+
+      </div>
+
+      <div id="main">
+
+        <div id="container">
+
+          <div class="dischi" v-for = "info in listaDischi">
+
+            <img :src= "info.poster" alt="foto album">
+            <p>{{info.title}}</p>
+            <p>{{info.author}}</p>
+            <p>{{info.year}}</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+</html>
