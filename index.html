@@ -15,6 +15,15 @@
 
         <img src="https://cdn.iconscout.com/icon/free/png-256/spotify-11-432546.png" alt="spotify logo">
 
+        <!-- v model per collegare a generiMusic e change per attivare metodo qualora per l appunto cambi genere -->
+        <select id="selezione" v-model ="generiMusic" @change ="selezGenere">
+          <option value="tutti">Tutti</option>
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
+          <option value="metal">Metal</option>
+          <option value="jazz">Jazz</option>
+        </select>
+
       </div>
 
       <div id="main">
