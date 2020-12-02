@@ -55,12 +55,13 @@
 
 .dischi > p:nth-child(2){
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .dischi > p:nth-last-child(2) ,
 .dischi > p:last-child{
   color: darkkhaki;
+  font-size: 12px;
 }
 
 img{
